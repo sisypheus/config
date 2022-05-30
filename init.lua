@@ -1,7 +1,9 @@
+vim.opt.background = 'dark'
+vim.cmd([[colorscheme gruvbox]])
+
 require "user.keymaps"
 require "user.plugins"
 require "user.options"
-require "user.colorscheme"
 require "user.cmp"
 require "user.lsp"
 require "user.telescope"
@@ -11,8 +13,8 @@ require "user.comment"
 require "user.gitsigns"
 require "user.nvim-tree"
 require "user.bufferline"
-require "user.lualine"
 require "user.toggleterm"
+require "user.lualine"
 require "user.project"
 require "user.impatient"
 require "user.indentline"
