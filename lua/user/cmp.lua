@@ -70,8 +70,9 @@ cmp.setup {
     ["<Tab>"] = cmp.mapping(function(fallback)
 			local copilot_keys = vim.fn["copilot#Accept"]("")
 			if cmp.visible() then
-				cmp.select_next_item()
-			elseif copilot_keys ~= "" then
+        cmp.mapping.select_next_item()
+        cmp.mapping.confirm {select = true} (fallback)
+      elseif copilot_keys ~= "" then
 				vim.api.nvim_feedkeys(copilot_keys, "i", false)
 			elseif luasnip.expandable() then
 				luasnip.expand()
