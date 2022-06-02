@@ -1,3 +1,6 @@
+vim.api.nvim_exec([[
+  autocmd FocusGained,BufEnter,CursorHold,CursorHoldI * if mode() != 'c' | checktime | endif
+]], false)
 vim.opt.background = 'dark'
 vim.cmd([[colorscheme gruvbox]])
 
