@@ -6,6 +6,7 @@ end
 autosave.setup({
   enabled = true,
   events = { "InsertLeave", "TextChanged" },
+  execution_message = "",
   conditions = {
     exists = true,
     filetype_is_not = {},
