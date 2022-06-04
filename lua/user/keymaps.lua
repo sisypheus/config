@@ -1,7 +1,5 @@
 local opts = { noremap = true, silent = true }
 
-local term_opts = { silent = true }
-
 -- Shorten function name
 local keymap = vim.api.nvim_set_keymap
 
@@ -40,8 +38,8 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 -- keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
 
 -- Insert --
--- Press jk fast to enter
 keymap("i", "jk", "<ESC>", opts)
+keymap("i", "kj", "<ESC>", opts)
 
 -- Visual --
 -- Stay in indent mode
