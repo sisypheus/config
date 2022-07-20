@@ -67,6 +67,11 @@ return packer.startup(function(use)
     "catppuccin/nvim",
     as = "catppuccin"
   })
+  use "tjdevries/colorbuddy.vim"
+  use ({
+    "tjdevries/gruvbuddy.nvim",
+    as = "gruvbuddy"
+  })
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
@@ -108,4 +113,6 @@ return packer.startup(function(use)
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end
+  require("colorbuddy").colorscheme "gruvbuddy"
+
 end)
