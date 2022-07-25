@@ -1,11 +1,10 @@
 vim.api.nvim_exec([[
   autocmd FocusGained,BufEnter,CursorHold,CursorHoldI * if mode() != 'c' | checktime | endif
 ]], false)
-vim.opt.background = 'dark'
--- vim.cmd([[colorscheme catppuccin]])
 
 require "user.keymaps"
 require "user.plugins"
+require "user.colorscheme"
 require "user.options"
 require "user.cmp"
 require "user.lsp"

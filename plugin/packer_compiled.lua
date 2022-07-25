@@ -99,11 +99,6 @@ _G.packer_plugins = {
     path = "/Users/theo/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
     url = "https://github.com/akinsho/bufferline.nvim"
   },
-  catppuccin = {
-    loaded = true,
-    path = "/Users/theo/.local/share/nvim/site/pack/packer/start/catppuccin",
-    url = "https://github.com/catppuccin/nvim"
-  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/theo/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -129,11 +124,6 @@ _G.packer_plugins = {
     path = "/Users/theo/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
-  ["colorbuddy.vim"] = {
-    loaded = true,
-    path = "/Users/theo/.local/share/nvim/site/pack/packer/start/colorbuddy.vim",
-    url = "https://github.com/tjdevries/colorbuddy.vim"
-  },
   ["copilot.vim"] = {
     loaded = true,
     path = "/Users/theo/.local/share/nvim/site/pack/packer/start/copilot.vim",
@@ -148,11 +138,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/theo/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
-  },
-  gruvbuddy = {
-    loaded = true,
-    path = "/Users/theo/.local/share/nvim/site/pack/packer/start/gruvbuddy",
-    url = "https://github.com/tjdevries/gruvbuddy.nvim"
   },
   ["impatient.nvim"] = {
     loaded = true,
@@ -253,6 +238,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/theo/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
+  },
+  ["tokyonight.nvim"] = {
+    loaded = true,
+    path = "/Users/theo/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
+    url = "https://github.com/folke/tokyonight.nvim"
   },
   ["vim-bbye"] = {
     loaded = true,

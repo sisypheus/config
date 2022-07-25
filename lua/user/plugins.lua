@@ -16,12 +16,12 @@ if fn.empty(fn.glob(install_path)) > 0 then
 end
 
 -- Autocommand that reloads neovim whenever you save the plugins.lua file
-vim.cmd [[
-  augroup packer_user_config
-    autocmd!
-    autocmd BufWritePost plugins.lua source <afile> | PackerSync
-  augroup end
-]]
+ vim.cmd [[
+   augroup packer_user_config
+     autocmd!
+     autocmd BufWritePost plugins.lua source <afile> | PackerSync
+   augroup end
+ ]]
 
 -- Use a protected call so we don't error out on first use
 local status_ok, packer = pcall(require, "packer")
@@ -58,19 +58,28 @@ return packer.startup(function(use)
   use "goolord/alpha-nvim"
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "folke/which-key.nvim"
- -- use "ellisonleao/gruvbox.nvim"
+  -- use "ellisonleao/gruvbox.nvim"
 
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   -- use "lunarvim/darkplus.nvim"
+  -- use({
+  --   "catppuccin/nvim",
+  --   as = "catppuccin"
+  -- })
+  -- use "tjdevries/colorbuddy.vim"
+  -- use({
+  --   "tjdevries/gruvbuddy.nvim",
+  --   as = "gruvbuddy"
+  -- })
+  -- use "norcalli/nvim-colorizer.lua"
   use({
-    "catppuccin/nvim",
-    as = "catppuccin"
-  })
-  use "tjdevries/colorbuddy.vim"
-  use ({
-    "tjdevries/gruvbuddy.nvim",
-    as = "gruvbuddy"
+    "folke/tokyonight.nvim",
+    opt = false,
+    -- event = "VimEnter",
+    -- config = function()
+    --   require("colorscheme")
+    -- end,
   })
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -113,6 +122,5 @@ return packer.startup(function(use)
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end
-  require("colorbuddy").colorscheme "gruvbuddy"
 
 end)
