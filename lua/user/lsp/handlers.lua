@@ -83,7 +83,13 @@ M.on_attach = function(client, bufnr)
   -- TODO: refactor this into a method that checks if string in list
   if client.name == "tsserver" then
     client.resolved_capabilities.document_formatting = false
-  elseif client.name == "rust_analyzer" then
+  end
+
+  if client.name == "rust_analyzer" then
+    client.resolved_capabilities.document_formatting = false
+  end
+
+  if client.name == "sumneko_lua" then
     client.resolved_capabilities.document_formatting = false
   end
   lsp_keymaps(bufnr)
