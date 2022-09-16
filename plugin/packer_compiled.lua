@@ -242,7 +242,7 @@ _G.packer_plugins = {
   pinkmare = {
     loaded = true,
     path = "/Users/theo/.local/share/nvim/site/pack/packer/start/pinkmare",
-    url = "https://github.com/matsuuu/pinkmare"
+    url = "https://github.com/sisypheus/pinkmare"
   },
   ["plenary.nvim"] = {
     loaded = true,

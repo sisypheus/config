@@ -26,3 +26,6 @@ require "user.autosave"
 require "user.autocommands"
 
 vim.cmd("colorscheme pinkmare")
+vim.api.nvim_exec([[
+  autocmd VimEnter * ASToggle
+]], false)

@@ -65,7 +65,7 @@ return packer.startup(function(use)
 		"rose-pine/neovim",
 		tag = "v1.*",
 	})
-  use("matsuuu/pinkmare")
+	use("sisypheus/pinkmare")
 
 	-- Colorschemes
 	-- use({
